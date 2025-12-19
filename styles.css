@@ -192,14 +192,15 @@ main {
 }
 .introduction__icon1{
     position: absolute;
-    right:708px;
-    top:315px;
+    right: 44%;
+    top: 47%;
 }
 .introduction__icon2{
     position: absolute;
-    right: 81px;
-    top:86px;
+    right: 8%;
+    top: 12%;
 }
+
 .container__brands {
     height: 16%;
     background-color: #000000;
