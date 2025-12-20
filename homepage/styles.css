@@ -119,7 +119,7 @@ main {
 
 .container__introduction {
     height: 84%;
-    background-image: url('./img/Rectangle\ 2.svg');
+    background-image: url('../img/Rectangle\ 2.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
