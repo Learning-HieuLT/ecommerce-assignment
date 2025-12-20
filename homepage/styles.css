@@ -52,7 +52,7 @@
 }
 
 .header__nav {
-    width: 321px;
+    width: 28.66%;
     height: 22px;
     display: flex;
     justify-content: space-between;
@@ -87,16 +87,16 @@
 }
 
 .header__link {
-    width: 62px;
+    width: 5%;
     height: 24px;
     display: flex;
     gap: 10px;
 }
 
 .nav__item {
-    width: 60px;
+    width: 18.7%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: relative;
 }
@@ -164,7 +164,7 @@ main {
 }
 
 .container__text button {
-    width: 210px;
+    width: 32%;
     height: 52px;
     background-color: #000000;
     color: #f0f0f0;
@@ -226,7 +226,7 @@ main {
     height: 96.7%;
     margin-top: 72px;
     padding: 0 100px;
-   
+
 }
 
 
@@ -268,37 +268,307 @@ main {
     font-style: bold;
     line-height: 100%;
 }
-.container__price{
+
+.container__price {
     display: flex;
-    gap:12px;
+    gap: 12px;
     align-items: center;
-   
+
 }
-.card__price del{
-    color:#BEBEBE
+
+.card__price del {
+    color: #BEBEBE
 }
-.card__discount{
+
+.card__discount {
     color: #FF3333;
     padding: 6px 14px;
     background-color: #FFE6E6;
     border-radius: 62px;
 
 }
-.box__button{
-    width:218px;
-    height:52px;
-    background-color:#FFFFFF;
-    color:#000000;
+
+.box__button {
+    width: 16%;
+    height: 52px;
+    background-color: #FFFFFF;
+    color: #000000;
     font-weight: 700;
-    border-radius:62px;
-    display:block;
+    border-radius: 62px;
+    display: block;
     margin: 0 auto;
-    border:1px solid #BEBEBE;
-    margin-top:37px;
+    border: 1px solid #BEBEBE;
+    margin-top: 37px;
 }
-.box__undeline{
-    width:100%;
+
+.box__undeline {
+    width: 100%;
     height: 1px;
     background-color: #BEBEBE;
     margin-top: 64px;
+}
+
+.header__hamberger {
+    display: none;
+}
+
+.icon1 {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    main {
+        margin-top: 70px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__hamberger {
+        display: block;
+    }
+
+    .header__search {
+        display: none;
+    }
+
+    .header__container {
+        position: relative;
+    }
+
+    .header__logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .container__introduction {
+        background-position: 80% center;
+        height: 950px;
+    }
+
+    .container__introduction--text {
+        padding: 103px 50px 116px 50px;
+        width: 70%;
+        gap: 2px;
+        flex-direction: row;
+
+    }
+
+    .container__introduction--text h1 {
+        font-size: 40px;
+    }
+
+    .container__introduction--text p {
+        width: 65%;
+    }
+
+    .container__quality {
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        bottom: 30%;
+    }
+
+    .quality__item--between {
+        border: none;
+        padding: 20px 0;
+    }
+
+    .introduction__icon1 {
+      right: 64%;
+        top: 39%;
+    }
+    .introduction__icon2 {
+        right: 4%;
+        top: 13%;
+    }
+
+    .container__brands {
+        height: auto;
+    }
+
+    .box {
+        height: auto;
+        ;
+    }
+
+    .containcard__card {
+        width: calc((100% - 20px) /2);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header__probar--close {
+        display: none;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__search {
+        display: none;
+
+    }
+
+    .header__hamberger {
+        display: block;
+        position: absolute;
+        left: 5%;
+    }
+
+    .header__logo {
+        position: absolute;
+        left: 15%;
+
+    }
+
+    .icon1 {
+        display: block;
+    }
+
+    main {
+        margin-top: 60px;
+        height: auto;
+    }
+
+    .container {
+        height: auto;
+        background-color: #F5F5F5;
+    }
+
+    .container__introduction {
+        display: flex;
+        flex-direction: column;
+        background: none;
+        height: auto;
+    }
+
+    .container__introduction--text {
+        width: 100%;
+        padding: 24px 16px;
+        gap: 24px;
+    }
+
+    .container__text h1 {
+        width: 100%;
+        font-size: 38px;
+        line-height: 1.1;
+        font-weight: 800;
+    }
+
+    .container__text p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .container__text button {
+        width: 100%;
+        height: 48px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .container__quality {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 84%;
+        gap: 16px;
+        margin: 0 auto;
+
+    }
+
+    .item__number {
+        font-size: 24px;
+    }
+
+    .quality__item--between {
+        padding: 0 0 0 13px;
+        border: none;
+        border-left: 1px solid #BEBEBE;
+
+    }
+
+    .item__text {
+        font-size: 14px;
+    }
+
+    .container__introduction--text::after {
+        content: "";
+        width: 100%;
+        height: 480px;
+        background-image: url('../img/Rectangle\ 2.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 85% center;
+    }
+
+    .container__brands {
+        padding: 10px 0;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .container__brands img {
+        width: 25%;
+    }
+
+    .box {
+        height: auto;
+        padding: 0 16px;
+        margin-top: 50px;
+    }
+
+    .box__heading {
+        font-size: 32px;
+        padding-bottom: 32px;
+    }
+
+    .containcard__card {
+        width: calc((100% - 20px) / 2);
+    }
+
+    .card__price {
+        font-size: 18px;
+    }
+
+    .containcard__card h3 {
+        font-size: 13.5px;
+    }
+
+    .box__button {
+        width: 100%;
+        height: 48px;
+        font-size: 16px;
+    }
+
+    .introduction__icon1 {
+        position: absolute;
+        left: 8%;
+        top: 65%;
+        width: 44px;
+        height: 44px;
+    }
+
+    .introduction__icon2 {
+        position: absolute;
+        right:7%;
+        top: 50%;
+        width: 76px;
+        height: 76px;
+    }
+    .card3,.card4{
+        display: none;
+    }
 }
