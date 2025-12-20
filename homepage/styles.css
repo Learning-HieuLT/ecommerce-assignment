@@ -401,6 +401,9 @@ main {
     .containcard__card {
         width: calc((100% - 20px) /2);
     }
+    .container__brands img {
+        width: 14%;
+    }
 }
 
 @media screen and (max-width: 767px) {
