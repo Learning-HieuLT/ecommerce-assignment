@@ -173,7 +173,7 @@ main {
     height: 52px;
     background-color: #000000;
     color: #f0f0f0;
-    border-radius: 50%;
+    border-radius: 5em;
 }
 
 .container__quality {
@@ -289,7 +289,7 @@ main {
     color: #FF3333;
     padding: 6px 14px;
     background-color: #FFE6E6;
-    border-radius: 62px;
+    border-radius: 5em;
 
 }
 
@@ -299,7 +299,7 @@ main {
     background-color: #FFFFFF;
     color: #000000;
     font-weight: 700;
-    border-radius: 50%;
+    border-radius: 5em;
     display: block;
     margin: 0 auto;
     border: 1px solid #BEBEBE;
@@ -468,6 +468,9 @@ main {
     .container__brands {
         height: auto;
     }
+    .brand2{
+        width: 9% !important;
+    }
 
     .box {
         height: auto;
@@ -480,11 +483,12 @@ main {
     .container__brands img {
         width: 14%;
     }
-    
+   
    .contain__img .style-item{
     width: calc((100% - 20px) / 2);
     height: 30%;
    }
+
    .style-label{
     font-size: 30px;
     top: 8%;
@@ -560,6 +564,9 @@ main {
         line-height: 1.1;
         font-weight: 800;
     }
+     .container__text{
+        padding: 0 15px 0 15px;
+    }
 
     .container__text p {
         width: 100%;
@@ -617,10 +624,13 @@ main {
         gap: 20px;
         justify-content: center;
     }
-
+    .brand2{
+        width: 16% !important;
+    }
     .container__brands img {
         width: 25%;
     }
+    
 
     .box {
         height: auto;
@@ -662,7 +672,7 @@ main {
     .introduction__icon2 {
         position: absolute;
         right:7%;
-        top: 50%;
+        top: 52%;
         width: 76px;
         height: 76px;
     }
@@ -684,10 +694,10 @@ main {
        .box2{
         padding: 0 10px;
        }
-       .img4{
-        object-fit: cover;
-        object-position: top center;
-       }
+        .img4 img{
+            object-fit: cover;
+            object-position: top center;
+        }
        .contain__heading{
         font-size: 45px;
         font-weight: 700;
