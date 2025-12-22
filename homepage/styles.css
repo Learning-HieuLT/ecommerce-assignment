@@ -914,6 +914,9 @@ main {
     .fourth {
         display: none;
     }
+    .final{
+        display: none;
+    }
 
     .second {
         height: 241.19px;
