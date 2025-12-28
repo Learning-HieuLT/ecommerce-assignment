@@ -504,6 +504,14 @@ main{
 .smallnav {
     width: 99.45%;
 }
+.container__small {
+        flex-direction: row;
+        width: 99%;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 15px;
+        order: 2;
+    }
 }
 @media screen and (min-width: 1800px) {
     .header__container {
@@ -712,6 +720,24 @@ main{
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+     .contents h1 {
+        font-size: 55px;
+        font-weight: 700;
+    }
+    .price > span {
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 100%;
+    }
+        .contents p {
+        font-size: 22px;
+        }
+        .colors span {
+        font-size: 22px;
+        }
+        .selectsize span {
+        font-size: 22px;
+        }
 }
 @media screen and (min-width: 1331px) and (max-width: 1799px) {
    .container__large img {
@@ -721,7 +747,22 @@ main{
     border-radius: 20px;
     margin-left: 12px;
 }
+    .container__large img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-left: 9px;
+    }
     
+}
+@media screen  and (min-width: 2500px) {
+    
+    main {
+    margin-top: 100px;
+    height: auto;
+    padding: 0 126px;
+}   
 }
     
 
