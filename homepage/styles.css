@@ -200,7 +200,12 @@ main {
     color: #f0f0f0;
     border-radius: 5em;
 }
-
+.container__text button a{
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: 500;
+    font-size: 16px;
+}
 .container__quality {
     display: flex;
     width: 90%;
@@ -575,10 +580,10 @@ main {
     cursor: pointer;
 }
 .container__text button:hover{
-    background-color: #FFFFFF;
+    background-color: #000000;
     color: #000000;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 14px #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 11px #000000;
 }
 .style-item {
     transition: all 0.3s ease;
