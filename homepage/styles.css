@@ -849,13 +849,14 @@ main {
         gap: 45%;
         padding: 20px 51px;
     }
+
     .header__link {
-    width: 5%;
-    height: 24px;
-    display: flex;
-    gap: 10px;
-    margin-right: 25px;
-}
+        width: 5%;
+        height: 24px;
+        display: flex;
+        gap: 10px;
+        margin-right: 25px;
+    }
 
     .header__logo {
         position: absolute;
@@ -1431,6 +1432,14 @@ main {
         margin-top: 45px;
     }
 
+    .card__price {
+        font-size: 14px;
+    }
+
+    .card__discount {
+        color: #FF3333;
+        padding: 2px 12px;
+    }
 
 }
 
@@ -1576,6 +1585,21 @@ main {
     .boxn {
         margin-top: 65px;
     }
+    .containcard__card h3{
+        font-size: 24px;
+    }
+    .card__price {
+        font-size: 30px;
+    }
+    .stars img {
+    width: 30px;
+    height: 30px;
+}
+.contentss {
+    margin-top: 140px;
+    width: 84.83%;
+}
+
 }
 
 @media screen and (min-width: 2100px) {
@@ -1612,6 +1636,37 @@ main {
         font-size: 63px;
     }
 
+    .form div {
+        max-width: 800px;
+    }
+
+    .form button {
+        max-width: 800px;
+    }
+
+    .box {
+
+        padding: 0 200px;
+    }
+
+    .header__container {
+        max-width: 2489px;
+        padding: 20px 200px;
+    }
+
+    .container__introduction--text {
+        padding: 103px 30px 116px 200px;
+    }
+
+    .box2 {
+
+        padding: 0 200px;
+    }
+
+    .contains {
+        height: 210px;
+        width: 85.15%;
+    }
 
 }
 
@@ -1777,4 +1832,16 @@ main {
         margin-top: 167px;
     }
 
+    .contents__2 span {
+        font-size: 14px;
+        color: #808080;
+    }
+
+    .contents__2 h3 {
+        font-size: 17px;
+    }
+
+}
+.cart{
+    cursor: pointer;
 }

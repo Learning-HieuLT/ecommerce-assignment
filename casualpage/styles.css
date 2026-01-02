@@ -506,6 +506,10 @@ main {
 .price__new {
     font-size: 20px;
     font-weight: 700;
+    white-space: nowrap;
+    max-width: 70px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .price__old del {
@@ -566,7 +570,7 @@ main {
 
 .pageNumbers {
     display: flex;
-    gap: 4px;
+    gap: 6px;
     margin: 0 3px;
 
 }
@@ -597,6 +601,58 @@ main {
 
 .fil {
     display: none;
+}
+
+.range {
+    height: 41.5px;
+    width: 100%;
+
+}
+
+.range__bar {
+    height: 6px;
+    width: 100%;
+    background-color: #f0f0f0;
+    position: relative;
+    margin-top: 14px;
+}
+
+.range__bar--black {
+    height: 6px;
+    width: 60.85%;
+    background: #000000;
+    position: absolute;
+    right: 53px;
+    left: 53px;
+}
+
+.circle1,
+.circle2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.circle1s {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    cursor: pointer;
+
+}
+
+.circle2s {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: absolute;
+    top: -7px;
+    right: -21px;
+    cursor: pointer;
 }
 
 
@@ -684,6 +740,7 @@ main {
     .price__new {
         font-size: 19px;
     }
+
     .size-btn {
         border: none;
         background-color: #f0f0f0;
@@ -849,6 +906,68 @@ main {
 
     .filterbar {
         height: 1270px;
+    }
+
+    .range__bar {
+        height: 10px;
+        width: 100%;
+        background-color: #f0f0f0;
+        position: relative;
+        margin-top: 14px;
+    }
+
+    .range__bar--black {
+        height: 10px;
+        width: 60.85%;
+        background: #000000;
+        position: absolute;
+        right: 53px;
+        left: 53px;
+    }
+
+    .circle1,
+    .circle2 {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #000000;
+    }
+
+    .circle1s {
+        top: -11px;
+        left: -5px;
+    }
+
+    .circle2s {
+        top: -11px;
+    }
+    .header__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 200px;
+    }
+    .nothing {
+    width: 100%;
+    padding: 0 200px;
+}
+    main {
+        height: auto;
+        margin-top: 115px;
+        padding: 0 200px;
+    }
+    .form div{
+        max-width: 800px;
+    }
+    .form button{
+        max-width: 800px;
+    }
+    .contains {
+        height: 190px;
+        width: 85.15%;
+    }
+    .contentss {
+    margin-top: 140px;
+    width: 84.83%;
     }
 }
 
@@ -1043,7 +1162,7 @@ main {
     main {
         height: auto;
         margin-top: 115px;
-        padding: 0 156px;
+        padding: 0 200px;
     }
 }
 
@@ -1123,7 +1242,7 @@ main {
 
 .contentss {
     margin-top: 140px;
-    width: 85.83%;
+    width: 84.83%;
     display: flex;
     justify-content: space-between;
 }
@@ -1151,11 +1270,12 @@ main {
     flex-direction: column;
     gap: 12px;
 }
-
 .contents__2 span {
-    font-size: 16px;
+    font-size: 14px;
     color: #808080;
 }
+
+
 
 .small__wrap {
     display: flex;
@@ -1239,6 +1359,15 @@ main {
         width: 48%;
     }
 
+    .contents__2 span {
+        font-size: 14px;
+        color: #808080;
+    }
+
+    .contents__2 h3 {
+        font-size: 17px;
+    }
+
     .payment {
         flex-direction: column;
         align-items: center;
@@ -1250,10 +1379,15 @@ main {
         height: auto;
         margin-top: 223px;
     }
-        .previous button {
+
+    .previous button {
         /* padding: 8px 14px; */
-        width: 85px;
-        }
+        width: 79px;
+    }
+
+    .nextpages button {
+        padding: 8px 9px;
+    }
 }
 
 @media screen and (min-width: 1025px) {
@@ -1265,8 +1399,12 @@ main {
 }
 
 @media screen and (min-width: 1030px) {
-   .contains {
-        width: 90.83%;
+        .contains {
+        width: 85.15%;
+    }
+    .contentss {
+    margin-top: 140px;
+    width: 83.83%;
     }
 }
 
@@ -1350,31 +1488,37 @@ main {
 
 @media screen and (min-width: 1600px) {
     .size-btn {
-    border: none;
-    background-color: #f0f0f0;
-    padding: 4% 8%;
-    border-radius: 62px;
-    font-size: 16px;
+        border: none;
+        background-color: #f0f0f0;
+        padding: 4% 8%;
+        border-radius: 62px;
+        font-size: 16px;
     }
-    
+
 }
+
 @media screen and (min-width: 2000px) {
     .contains {
-    height: 180px;
-    width: 92.01%;
+        height: 190px;
+        width: 85.15%;
     }
+
     .size-btn {
-    border: none;
-    background-color: #f0f0f0;
-    padding: 4% 8%;
-    border-radius: 62px;
-    font-size: 18px;
+        border: none;
+        background-color: #f0f0f0;
+        padding: 4% 8%;
+        border-radius: 62px;
+        font-size: 18px;
     }
+
     .nothingss {
-    height: 1px;
-    background: #d3d3d3;
-    margin-top: 30px;
-    width: 100%;
-    margin-bottom: 30px;
+        height: 1px;
+        background: #d3d3d3;
+        margin-top: 30px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
+.cart{
+    cursor: pointer;
 }
