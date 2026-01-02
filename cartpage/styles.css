@@ -885,6 +885,9 @@ main {
         height: auto;
         margin-top: 223px;
     }
+    .contains {
+        width: 95%;
+    }
 }
 
 @media screen and (min-width: 1025px) {
