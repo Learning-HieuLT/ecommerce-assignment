@@ -934,3 +934,6 @@ main {
 .cart{
     cursor: pointer;
 }
+.ao{
+    aspect-ratio: 1/1;
+}
