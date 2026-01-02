@@ -1057,6 +1057,10 @@ main {
         width: 100%;
         padding: 0 35px;
     }
+       .contentss {
+        margin-top: 140px;
+        width: 92.83%;
+    }
 }
 
 @media screen and (max-width: 767px) {
