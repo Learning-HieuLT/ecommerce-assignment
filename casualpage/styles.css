@@ -615,6 +615,7 @@ main {
     background-color: #f0f0f0;
     position: relative;
     margin-top: 14px;
+    border-radius: 20px;
 }
 
 .range__bar--black {
@@ -653,6 +654,12 @@ main {
     top: -7px;
     right: -21px;
     cursor: pointer;
+}
+.nothings {
+    width: 99.83%;
+    height: 1px;
+    background-color: #BEBEBE;
+    margin-top: 50px;
 }
 
 
@@ -1285,7 +1292,7 @@ main {
 }
 
 .nothings {
-    width: 85.83%;
+    width: 99.83%;
     height: 1px;
     background-color: #BEBEBE;
     margin-top: 50px;
