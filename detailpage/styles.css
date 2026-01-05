@@ -812,7 +812,16 @@ main {
     aspect-ratio: 1/1;
 }
 
-
+.card h3{
+    font-size: 22px;
+    line-height: 1.3;
+    height: calc(1.3em * 2);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 @media screen and (max-width: 1024px) and (min-width: 767.2px) {
     main {
         margin-top: 70px;

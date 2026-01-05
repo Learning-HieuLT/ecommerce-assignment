@@ -379,11 +379,10 @@ main {
 .apply:hover{
     transform: scale(1.05);
 }
-.checkoutbtn{
-    height: 60px;
-}.checkout{
+
+.checkout{
     width: 100%;
-    height: 100%;
+    height: 60px;
     outline: none;
     border: none;
     background-color: #000000;
@@ -933,6 +932,12 @@ main {
         .contentss {
         margin-top: 140px;
         width: 78.83%;
+    }
+    .form div{
+    max-width: 800px;
+    }
+    .form button{
+        max-width: 800px;
     }
     
 }
